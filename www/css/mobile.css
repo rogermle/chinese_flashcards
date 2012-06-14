@@ -1,0 +1,58 @@
+div.card_footer span.return:before,
+div.card_footer span.return:after,
+/* If on a mobile device remove the additional labels */
+div.card_header label.pinyin span.ui-btn-text:after,
+div.card_header label.english span.ui-btn-text:after,
+div.card_header label.character span.ui-btn-text:after,
+fieldset.char_toggle label.simplified span.ui-btn-text:after,
+fieldset.char_toggle label.traditional span.ui-btn-text:after,
+div.card_header label.show_all span.ui-btn-text:before,
+div.card_header label.show_all span.ui-btn-text:after,
+fieldset.play_buttons span.ui-btn-text:before
+
+{
+	content: "";
+}
+
+div.card_footer span.card_num:before
+{
+	content: "";
+
+}
+
+div.card_footer span.card_num:after
+{
+	content: " / ";
+}
+
+div.card_footer li.name
+{
+	display: none;
+}
+
+div.card_footer li.name
+{
+	content: "";
+}
+
+div.card div.pinyin
+{
+	font-size: 150% !important;
+}
+
+div.card div.english
+{
+	font-size: 150% !important;
+}
+
+div.card div.character span.major_character
+{
+	font-size: 75% !important;
+}
+
+div.card div.character span.minor_character
+{
+	font-size: 70% !important;
+}
+
+

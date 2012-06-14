@@ -1,0 +1,364 @@
+body.ui-mobile-viewport,div.ui-page{height:100%;width:100%;}
+
+
+/***** scroll bars *****/
+div.books_page{overflow:hidden !important;}
+
+
+
+/* ========================================== */
+/*             FRONT PAGE (books)             */
+/* ========================================== */
+
+
+div.books_page div.content{
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#717171),to(#272727));
+	background-image: -webkit-linear-gradient (#717171, #272727);
+	background-image: -moz-linear-gradient (#717171, #272727);
+	background-image: -ms-linear-gradient (#717171, #272727);
+	background-image: -o-linear-gradient (#717171, #272727);
+	background-image: linear-gradient (#717171, #272727);	
+
+}
+
+div#theBooks ul{
+	list-style:none;
+	margin:0 0 0 194px !important;
+	padding:0 !important;
+}
+
+div#theBooks ul li{
+display:inline;
+
+}
+
+div#theBooks ul li{
+display:inline;
+
+}
+
+div#theBooks ul li a, div#theBooks ul li a:visited{
+text-decoration: none;
+color:#ffffff;
+}
+
+
+div#theBooks ul li a:hover{
+	color:#5195b1;
+}
+
+div#theBooks ul li a:active{
+	color:#db7100;
+}
+
+h1#splashLogo{
+	display:block;
+	height:542px;
+	width:70%;
+	background:  url(http://dev.laits.utexas.edu/chinese_flashcards/d/www/images/placeholder.png) no-repeat;
+	text-indent:-1000em;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+
+/*************************************************************************************
+********                      Simplified vs. Traditional                      ********
+*************************************************************************************/
+
+fieldset.charTypeSelect{
+	margin:.3em 0 1em !important;
+	top:.1em !important;
+}
+
+
+fieldset.charTypeSelect label span.ui-btn-inner{
+	padding:.3em 8px .3em !important;
+}
+
+div.ui-page.simplified .char_trad{
+	display:none;
+}
+
+div.ui-page.traditional .char_simp{
+	display:none;
+}
+
+/* ======================================== */
+/*             LESSON LIST PAGE             */
+/* ======================================== */
+
+ul.wordlist li span.character{color:#F48A24;}
+ul.wordlist li span.pinyin{color:#F4363E;}
+ul.wordlist li span.english{color:#63AFF4;}
+
+
+
+/* ================================= */
+/*             CARD PAGE             */
+/* ================================= */
+
+
+/******************************************************************************
+********                      custom button icons                      ********
+******************************************************************************/
+
+.ui-icon-list {
+	background-image: url("../images/list.png") !important;
+}
+
+
+
+div.card_content{overflow:hidden !important;}
+
+div.card_page p
+{
+    /*margin-left:0 !important;*/
+    /*margin-right:0 !important;*/
+    /*margin-bottom:0 !important;*/
+    padding:0 !important;
+    text-align:center;
+    font-size:4em;}
+div.card_page div.card_content
+{
+    width:100%;
+}
+
+
+
+
+div.card_content div.pinyin{color:#D50026;font-family:Helvetica;font-size:1em;}
+div.card_content div.english{color:#F56200;font-family:Helvetica;font-size:1em;}
+div.card_content div.character{color:#0098B4;font-family:Kai,SimSun;font-size:3em;}
+
+
+
+
+/***** Brushed Metal backgrounds for Card Sections *****/
+div.card_page div.fullCard{
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#bdbdbd));
+	background-image: -webkit-linear-gradient	(#e6e6e6,#bdbdbd);
+	background-image: -moz-linear-gradient		(#e6e6e6,#bdbdbd);
+	background-image: -ms-linear-gradient		(#e6e6e6,#bdbdbd);
+	background-image: -o-linear-gradient		(#e6e6e6,#bdbdbd);
+	background-image: linear-gradient			(#e6e6e6,#bdbdbd);
+}
+
+
+div.leftHalf{
+background-image: -webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#bdbdbd));
+background-image: -webkit-linear-gradient	(#e6e6e6,#bdbdbd);
+background-image: -moz-linear-gradient		(#e6e6e6,#bdbdbd);
+background-image: -ms-linear-gradient		(#e6e6e6,#bdbdbd);
+background-image: -o-linear-gradient		(#e6e6e6,#bdbdbd);
+background-image: linear-gradient			(#e6e6e6,#bdbdbd);
+}
+
+div.card_page div.top, div.card_page div.bottom{
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#bdbdbd));
+	background-image: -webkit-linear-gradient	(#e6e6e6,#bdbdbd);
+	background-image: -moz-linear-gradient		(#e6e6e6,#bdbdbd);
+	background-image: -ms-linear-gradient		(#e6e6e6,#bdbdbd);
+	background-image: -o-linear-gradient		(#e6e6e6,#bdbdbd);
+	background-image: linear-gradient			(#e6e6e6,#bdbdbd);
+}
+
+div.card_page div.rightHalf{
+	background: -webkit-gradient(linear, left top, right top, color-stop(20%,#bdbdbd), color-stop(50%,#e6e6e6), color-stop(80%,#bdbdbd));
+	background: -webkit-linear-gradient(left,  #bdbdbd 20%,#e6e6e6 50%,#bdbdbd 80%);
+	background: -moz-linear-gradient(left,  #bdbdbd 20%, #e6e6e6 50%, #bdbdbd 80%);
+	background: -ms-linear-gradient(left,  #bdbdbd 20%,#e6e6e6 50%,#bdbdbd 80%);
+	background: -o-linear-gradient(left,  #bdbdbd 20%,#e6e6e6 50%,#bdbdbd 80%);
+	background: linear-gradient(left,  #bdbdbd 20%,#e6e6e6 50%,#bdbdbd 80%);
+}
+
+div.card_page .ui-content{padding:0px !important;}
+div.card_page p{margin: 0; padding: 0;}
+div.card_content div.fullCard{width:100%;height:100%;font-size:4em;}
+div.card_content div.leftHalf{height:100%;width:50%;float:left;}
+div.card_content div.rightHalf{height:100%;width:50%;float:left;}
+div.card_content div.top,div.card_content div.bottom{height:50%;width:100%;float:left;}
+
+div.leftHalf{border-right:1px solid #f8f8f8;}
+div.card_page div.top{
+	border-bottom: 1px solid #b3b3b3;
+}
+
+div.card_page div.bottom{
+	border-top: 1px solid #f8f8f8;	
+}
+
+div.card_page div.rightHalf{
+	border-left:1px solid #b3b3b3;
+}
+
+div.card_content{border-top: 2px solid #f8f8f8;border-bottom: 2px solid #f8f8f8;}
+
+div.card_content p
+{
+	margin:0;
+}
+
+                   
+div.footerBreadCrumb{display:inline;}
+                      
+/*div.card_page div.card_footer a.prevCard{left:.5%;}*/
+/*div.card_page div.card_footer a.nextCard{left:91%;}*/
+
+
+div#view_pin-eng-chi{height:100%;width:100%;}
+div#view_pin-eng{display:none;height:100%;width:100%;}
+div#view_chi{display:none;height:100%;width:100%;}
+div#view_eng{display:none;height:100%;width:100%;}
+div#view_pin{display:none;height:100%;width:100%;}
+div#view_pin-chi{display:none;height:100%;width:100%;}
+div#view_eng-chi{display:none;height:100%;width:100%;}
+
+
+
+
+/*******        HEADER         ********/
+
+/**************************************************************************
+********                      View Controller                      ********
+**************************************************************************/
+
+/**********   {checkboxes}   **********/
+fieldset.word_toggle label span.ui-btn-inner{
+	padding-left:27px !important;
+	
+	
+}
+
+fieldset.word_toggle label span.ui-btn-inner span.ui-icon-checkbox-on{
+	
+	background-position:-254.5px 50%;	
+
+}
+
+fieldset.word_toggle label span.ui-btn-inner span.ui-icon{
+	height:15px;
+	width:15px;
+	top:60%;
+	left:5px;
+	
+}
+
+fieldset.word_toggle label.pinyin span.ui-btn-inner span.ui-icon-checkbox-on{
+	background-color:#810b0e;
+	
+}
+
+
+fieldset.word_toggle label.english span.ui-btn-inner span.ui-icon-checkbox-on{
+	background-color:#b44a0a;
+	
+}
+
+
+fieldset.word_toggle label.character span.ui-btn-inner span.ui-icon-checkbox-on{
+	background-color:#114867;
+	
+}
+
+
+div.card_page div.testPlayer{display:none;}
+
+
+
+
+
+/**********   {pinyin}   **********/
+fieldset.word_toggle label.pinyin.ui-checkbox-on.ui-btn-active{background:#D50026;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#D50026;background-image:-webkit-gradient(linear,left top,left bottom,from(#d9646c),to(#8d0a0d));background-image:-webkit-linear-gradient(#d9646c,#8d0a0d);background-image:-moz-linear-gradient(#d9646c,#8d0a0d);background-image:-ms-linear-gradient(#d9646c,#8d0a0d);background-image:-o-linear-gradient(#d9646c,#8d0a0d);background-image:linear-gradient(#d9646c,#8d0a0d);border:1px solid #690709;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#690709;border-right-color:#690709;border-bottom-color:#690709;border-left-color:#690709;}
+fieldset.word_toggle label.pinyin.ui-checkbox-on.ui-btn-hover-a{background:#D50026;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#D50026;background-image:-webkit-gradient(linear,left top,left bottom,from(#8d0a0d),to(#cc4750));background-image:-webkit-linear-gradient(#8d0a0d,#cc4750);background-image:-moz-linear-gradient(#8d0a0d,#cc4750);background-image:-ms-linear-gradient(#8d0a0d,#cc4750);background-image:-o-linear-gradient(#8d0a0d,#cc4750);background-image:linear-gradient(#8d0a0d,#cc4750);border:1px solid #690709;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#690709;border-right-color:#690709;border-bottom-color:#690709;border-left-color:#690709;}
+fieldset.word_toggle label.pinyin.ui-checkbox-on.ui-btn-hover-a.ui-btn-down-a{background:#D50026;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#D50026;background-image:-webkit-gradient(linear,left top,left bottom,from(#8d0a0d),to(#a82528));background-image:-webkit-linear-gradient(#8d0a0d,#a82528);background-image:-moz-linear-gradient(#8d0a0d,#a82528);background-image:-ms-linear-gradient(#8d0a0d,#a82528);background-image:-o-linear-gradient(#8d0a0d,#a82528);background-image:linear-gradient(#8d0a0d,#a82528);border:1px solid #690709;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#690709;border-right-color:#690709;border-bottom-color:#690709;border-left-color:#690709;}
+
+
+/**********   {english}   **********/
+fieldset.word_toggle label.english.ui-checkbox-on.ui-btn-active{background:#F56200;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#F56200;background-image:-webkit-gradient(linear,left top,left bottom,from(#efbb6c),to(#ca530d));background-image:-webkit-linear-gradient(#efbb6c,#ca530d);background-image:-moz-linear-gradient(#efbb6c,#ca530d);background-image:-ms-linear-gradient(#efbb6c,#ca530d);background-image:-o-linear-gradient(#efbb6c,#ca530d);background-image:linear-gradient(#efbb6c,#ca530d);border:1px solid #9a3f0a;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#9a3f0a;border-right-color:#9a3f0a;border-bottom-color:#9a3f0a;border-left-color:#9a3f0a;}
+fieldset.word_toggle label.english.ui-checkbox-on.ui-btn-hover-a{background:#F56200;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#F56200;background-image:-webkit-gradient(linear,left top,left bottom,from(#ca530d),to(#d89e46));background-image:-webkit-linear-gradient(#ca530d,#d89e46);background-image:-moz-linear-gradient(#ca530d,#d89e46);background-image:-ms-linear-gradient(#ca530d,#d89e46);background-image:-o-linear-gradient(#ca530d,#d89e46);background-image:linear-gradient(#ca530d,#d89e46);border:1px solid #9a3f0a;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#9a3f0a;border-right-color:#9a3f0a;border-bottom-color:#9a3f0a;border-left-color:#9a3f0a;}
+fieldset.word_toggle label.english.ui-checkbox-on.ui-btn-hover-a.ui-btn-down-a{background:#F56200;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#F56200;background-image:-webkit-gradient(linear,left top,left bottom,from(#ca530d),to(#ca730d));background-image:-webkit-linear-gradient(#ca530d,#ca730d);background-image:-moz-linear-gradient(#ca530d,#ca730d);background-image:-ms-linear-gradient(#ca530d,#ca730d);background-image:-o-linear-gradient(#ca530d,#ca730d);background-image:linear-gradient(#ca530d,#ca730d);border:1px solid #9a3f0a;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#9a3f0a;border-right-color:#9a3f0a;border-bottom-color:#9a3f0a;border-left-color:#9a3f0a;}
+
+
+/**********   {character}   **********/
+fieldset.word_toggle label.character.ui-checkbox-on.ui-btn-active{background:#0098B4;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#0098B4;background-image:-webkit-gradient(linear,left top,left bottom,from(#8dc1d2),to(#1f5d80));background-image:-webkit-linear-gradient(#8dc1d2,#1f5d80);background-image:-moz-linear-gradient(#8dc1d2,#1f5d80);background-image:-ms-linear-gradient(#8dc1d2,#1f5d80);background-image:-o-linear-gradient(#8dc1d2,#1f5d80);background-image:linear-gradient(#8dc1d2,#1f5d80);border:1px solid #104766;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#104766;border-right-color:#104766;border-bottom-color:#104766;border-left-color:#104766;}
+fieldset.word_toggle label.character.ui-checkbox-on.ui-btn-hover-a{background:#0098B4;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#0098B4;background-image:-webkit-gradient(linear,left top,left bottom,from(#1f5d80),to(#57a7c1));background-image:-webkit-linear-gradient(#1f5d80,#57a7c1);background-image:-moz-linear-gradient(#1f5d80,#57a7c1);background-image:-ms-linear-gradient(#1f5d80,#57a7c1);background-image:-o-linear-gradient(#1f5d80,#57a7c1);background-image:linear-gradient(#1f5d80,#57a7c1);border:1px solid #104766;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#104766;border-right-color:#104766;border-bottom-color:#104766;border-left-color:#104766;}
+fieldset.word_toggle label.character.ui-checkbox-on.ui-btn-hover-a.ui-btn-down-a{background:#0098B4;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#0098B4;background-image:-webkit-gradient(linear,left top,left bottom,from(#1f5d80),to(#1f77a8));background-image:-webkit-linear-gradient(#1f5d80,#1f77a8);background-image:-moz-linear-gradient(#1f5d80,#1f77a8);background-image:-ms-linear-gradient(#1f5d80,#1f77a8);background-image:-o-linear-gradient(#1f5d80,#1f77a8);background-image:linear-gradient(#1f5d80,#1f77a8);border:1px solid #104766;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#104766;border-right-color:#104766;border-bottom-color:#104766;border-left-color:#104766;}
+
+/**********   {showAll}   **********/
+fieldset.word_toggle a.showAll.ui-btn-up-a{background:#dbdada;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#dbdada;background-image:-webkit-gradient(linear,left top,left bottom,from(#dad7da),to(#504f4e));background-image:-webkit-linear-gradient(#dad7da,#504f4e);background-image:-moz-linear-gradient(#dad7da,#504f4e);background-image:-ms-linear-gradient(#dad7da,#504f4e);background-image:-o-linear-gradient(#dad7da,#504f4e);background-image:linear-gradient(#dad7da,#504f4e);border:1px solid #393938;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#393938;border-right-color:#393938;border-bottom-color:#393938;border-left-color:#393938;text-shadow:0 -1px 1px #145072;}
+fieldset.word_toggle a.showAll.ui-btn-hover-a{background:#dbdada;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#dbdada;background-image:-webkit-gradient(linear,left top,left bottom,from(#504f4e),to(#919191));background-image:-webkit-linear-gradient(#504f4e,#919191);background-image:-moz-linear-gradient(#504f4e,#919191);background-image:-ms-linear-gradient(#504f4e,#919191);background-image:-o-linear-gradient(#504f4e,#919191);background-image:linear-gradient(#504f4e,#919191);border:1px solid #393938;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#393938;border-right-color:#393938;border-bottom-color:#393938;border-left-color:#393938;text-shadow:0 -1px 1px #145072;}
+fieldset.word_toggle a.showAll.ui-btn-down-a{background:#dbdada;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#dbdada;background-image:-webkit-gradient(linear,left top,left bottom,from(#504f4e),to(#737373));background-image:-webkit-linear-gradient(#504f4e,#737373);background-image:-moz-linear-gradient(#504f4e,#737373);background-image:-ms-linear-gradient(#504f4e,#737373);background-image:-o-linear-gradient(#504f4e,#737373);background-image:linear-gradient(#504f4e,#737373);border:1px solid #393938;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#393938;border-right-color:#393938;border-bottom-color:#393938;border-left-color:#393938;text-shadow:0 -1px 1px #145072;}
+
+
+/**********   other stuff...   **********/
+
+fieldset.word_toggle div.ui-checkbox input{
+	visibility:hidden; /* the actual checkbox <input> elements were hanging below the ui-checkboxes on some mobile devices */
+}
+fieldset.word_toggle{
+	line-height:.6; /*makes the buttons slimmer (vertically)*/
+}
+
+fieldset.word_toggle span.ui-btn-text{
+	font-family: Futura, Helvetica, sans-serif;
+	font weight: normal;
+	font-weight: normal;
+
+}
+fieldset.word_toggle .ui-checkbox-off span.ui-btn-text{
+	color:#a9a8a8;
+}
+
+
+a.showAll{
+	line-height:.75;
+}
+
+fieldset.word_toggle a.showAll span.ui-btn-text{
+	white-space:normal;
+	text-align:left;
+	font-size:16px;
+	z-index:1;
+	font-family: Futura, Helvetica, sans-serif;
+	font-weight: normal;
+	color:#fff;
+	text-align:left;
+}
+
+/*
+this dims the color a viewButton's text when it is unclickable,
+i.e. when it's the only checked element....
+it doesn't look great with this color/style, I think it would 
+make the functionality a little more descriptive if the style somehow changes,
+telling the user the button is no longer clickable
+*/
+
+/*
+fieldset.word_toggle div.ui-checkbox.unclickable label.pinyin.ui-checkbox-on{background:#D50026;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#D50026;background-image:-webkit-gradient(linear,left top,left bottom,from(#8d0a0d),to(#a82528));background-image:-webkit-linear-gradient(#8d0a0d,#a82528);background-image:-moz-linear-gradient(#8d0a0d,#a82528);background-image:-ms-linear-gradient(#8d0a0d,#a82528);background-image:-o-linear-gradient(#8d0a0d,#a82528);background-image:linear-gradient(#8d0a0d,#a82528);border:1px solid #690709;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#690709;border-right-color:#690709;border-bottom-color:#690709;border-left-color:#690709;}
+fieldset.word_toggle div.ui-checkbox.unclickable label.english.ui-checkbox-on{background:#F56200;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#F56200;background-image:-webkit-gradient(linear,left top,left bottom,from(#ca530d),to(#ca730d));background-image:-webkit-linear-gradient(#ca530d,#ca730d);background-image:-moz-linear-gradient(#ca530d,#ca730d);background-image:-ms-linear-gradient(#ca530d,#ca730d);background-image:-o-linear-gradient(#ca530d,#ca730d);background-image:linear-gradient(#ca530d,#ca730d);border:1px solid #9a3f0a;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#9a3f0a;border-right-color:#9a3f0a;border-bottom-color:#9a3f0a;border-left-color:#9a3f0a;}
+fieldset.word_toggle div.ui-checkbox.unclickable label.character.ui-checkbox-on{background:#0098B4;background-repeat-x:initial;background-repeat-y:initial;background-attachment:initial;background-position-x:initial;background-position-y:initial;background-origin:initial;background-clip:initial;background-color:#0098B4;background-image:-webkit-gradient(linear,left top,left bottom,from(#1f5d80),to(#1f77a8));background-image:-webkit-linear-gradient(#1f5d80,#1f77a8);background-image:-moz-linear-gradient(#1f5d80,#1f77a8);background-image:-ms-linear-gradient(#1f5d80,#1f77a8);background-image:-o-linear-gradient(#1f5d80,#1f77a8);background-image:linear-gradient(#1f5d80,#1f77a8);border:1px solid #104766;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#104766;border-right-color:#104766;border-bottom-color:#104766;border-left-color:#104766;}
+*/
+div.ui-checkbox.unclickable span.ui-btn-text{
+	color:#a9a8a8;
+}
+
+div.ui-checkbox.unclickable{cursor:default !important;}
+
+
+/**************************************************************************/
+
+
+
+
+div#view_pin-eng-chi{}
+div#view_pin-eng{display:none;}
+div#view_chi{display:none;}
+div#view_eng{display:none;}
+div#view_pin{display:none;}
+div#view_pin-chi{display:none;}
+div#view_eng-chi{display:none;}
+
+

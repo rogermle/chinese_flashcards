@@ -1,0 +1,53 @@
+div.card_footer span.card_num:after
+{
+	content: " of ";
+
+}
+div.card_footer span.return:before
+{
+	content: "return to ";
+}
+
+div.card_footer span.return:after
+{
+	content: " list";
+}
+
+
+div.card_header label.pinyin span.ui-btn-text:after
+{
+	content: 'inyin';
+}
+
+div.card_header label.english span.ui-btn-text:after
+{
+	content: 'nglish';
+}
+
+div.card_header label.character span.ui-btn-text:after
+{
+	content: 'haracter';
+}
+
+div.card_header label.show_all span.ui-btn-text:before
+{
+	content: 'show ';
+}
+
+div.card_header label.show_all span.ui-btn-text:after
+{
+	content: 'll';
+}
+
+fieldset.char_toggle label.simplified span.ui-btn-text:after
+{
+	content: 'imp';
+}
+
+fieldset.char_toggle label.traditional span.ui-btn-text:after
+{
+	content: 'rad';
+}
+
+/* Font size specific */
+
