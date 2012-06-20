@@ -1,1 +1,3 @@
 files/*
+inc/local_config.php
+.htaccess
