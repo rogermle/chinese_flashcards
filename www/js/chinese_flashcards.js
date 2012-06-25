@@ -50,20 +50,21 @@ function word_toggle(value)
 		}
 }
 
-/*$(document).on("pagechange", "div.card_page",  function(){
-	var word_toggle_array = [];
-	$.mobile.activePage.find('fieldset.word_toggle input[type="checkbox"].view_toggle').each(function(){console.log(this.checked)})
-	$.mobile.activePage.find('fieldset.word_toggle input[type="checkbox"].view_toggle').each(function(){
-		//console.log(this.checked);
-		if( $(this).prop("checked") )
-			{
-				word_toggle_array.push($(this).val());
-			}
-	});
-	var card_pref = word_toggle_array.join('-');
-	console.log(card_pref);
-	$.cookie('card_pref', card_pref, {expires: 14, path: '/'});
-});*/
+function next_page()
+{
+	var nextPage = $.mobile.activePage.find(".nextCard").attr("href");
+		if (nextPage !== undefined)
+		{
+			$.mobile.changePage(nextPage);
+		}
+}
+
+function previous_page()
+{
+	var prevPage = $.mobile.activePage.find(".prevCard").attr("href");
+		if (prevPage !== undefined)
+			$.mobile.changePage(prevPage);
+}
 
 $(document).on("pagebeforeshow", "#word_list.ui-page", function(e){
 	var user_pref = $.cookie('user_pref');
@@ -208,17 +209,25 @@ $(document).on("pagebeforeshow", "div.card_page", function(e){
 	});
 	
 	$(document).on("swipeleft","div.card_page", function(e){
-		var nextPage = $.mobile.activePage.find(".nextCard").attr("href");
-		if (nextPage !== undefined)
+		next_page();
+	});
+	
+	$(document).on("swipeleft","div.card_page", function(e){
+		next_page();
+	});
+	
+	$(document).on("keyup","div.card_page", function(e){
+		if(e.keyCode == 37)
 		{
-			$.mobile.changePage(nextPage);
+			previous_page();	
 		}
 	});
 	
-	$(document).on("swiperight","div.card_page", function(e){
-		var prevPage = $.mobile.activePage.find(".prevCard").attr("href");
-		if (prevPage !== undefined)
-			$.mobile.changePage(prevPage);
+	$(document).on("keyup","div.card_page", function(e){
+		if(e.keyCode == 39)
+		{
+			next_page();	
+		}
 	});
 	
 	$(document).on('change', 'fieldset.word_toggle input[type="checkbox"].view_toggle', function(e){
