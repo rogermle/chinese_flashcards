@@ -212,8 +212,8 @@ $(document).on("pagebeforeshow", "div.card_page", function(e){
 		next_page();
 	});
 	
-	$(document).on("swipeleft","div.card_page", function(e){
-		next_page();
+	$(document).on("swiperight","div.card_page", function(e){
+		previous_page();
 	});
 	
 	$(document).on("keyup","div.card_page", function(e){
