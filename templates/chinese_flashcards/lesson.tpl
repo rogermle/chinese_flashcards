@@ -2,30 +2,40 @@
 
 {block name="page"}
 	<div id="word_list" data-role="page" data-fullscreen="true" data-add-back-btn="true" data-back-btn-text="Previous">
-		<div data-role="header">
-			<a rel='external' href="{$app_root}books" data-role="button" data-icon="home" data-inline="true" data-iconpos="notext">Home</a>
-			<h1><a id="book" href="{$app_root}book/{$lesson->book->short_name}">{$lesson->book->short_name}</a> :: Lesson {$lesson->name}</h1>
-			<div class="ui-grid-b">
-				<div class="ui-block-a">
-					<a data-rel="back" href='#' class='ui-btn-left' data-icon='arrow-l'></a>
+			<div class="ui-bar ui-bar-a ui-header">
+				<a rel='external' href="{$app_root}books" data-role="button" data-icon="home" data-inline="true" data-iconpos="notext">Home</a>
+				<h1 class="ui-title">
+					<a id="book" href="{$app_root}book/{$lesson->book->short_name}">{$lesson->book->short_name|capitalize}</a> : Lesson {$lesson->name}
+				</h1>
+				<div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
+					<fieldset class="char_toggle" >
+						<input type="radio" name="simp_trad_toggle" {if $user_pref == 'simplified'}checked="checked"{/if} id="simp_trad_toggle_s" value="simplified" />
+						<label for="simp_trad_toggle_s" class="simplified">s</label>
+						<input type="radio" name="simp_trad_toggle" {if $user_pref == 'traditional'}checked="checked"{/if} id="simp_trad_toggle_t" value="traditional" />
+						<label for="simp_trad_toggle_t" class="traditional">t</label>
+					</fieldset>
 				</div>
-				<div class="ui-block-b">
-				</div>
-				<div class="ui-block-c">
-					<div data-role="fieldcontain">
-						<fieldset data-role="controlgroup" data-type="horizontal" class="char_toggle" data-mini="true">
-							<input type="radio" name="simp_trad_toggle" {if $user_pref == 'simplified'}checked="checked"{/if} id="simp_trad_toggle_s" value="simplified" />
-							<label for="simp_trad_toggle_s" class="simplified">s</label>
-							<input type="radio" name="simp_trad_toggle" {if $user_pref == 'traditional'}checked="checked"{/if} id="simp_trad_toggle_t" value="traditional" />
-							<label for="simp_trad_toggle_t" class="traditional">t</label>
-						</fieldset>
+				<!--<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<a data-rel="back" href='#' class='ui-btn-left' data-icon='arrow-l'></a>
 					</div>
-				</div><!-- end of ui-block-c -->
-			</div><!-- end of ui-grid-b -->
+					<div class="ui-block-b">
+					</div>
+					<div class="ui-block-c">
+						<div data-role="fieldcontain">
+							<fieldset data-role="controlgroup" data-type="horizontal" class="char_toggle" data-mini="true">
+								<input type="radio" name="simp_trad_toggle" {if $user_pref == 'simplified'}checked="checked"{/if} id="simp_trad_toggle_s" value="simplified" />
+								<label for="simp_trad_toggle_s" class="simplified">s</label>
+								<input type="radio" name="simp_trad_toggle" {if $user_pref == 'traditional'}checked="checked"{/if} id="simp_trad_toggle_t" value="traditional" />
+								<label for="simp_trad_toggle_t" class="traditional">t</label>
+							</fieldset>
+						</div>
+					</div>
+				</div><!-- end of ui-grid-b -->
 		</div><!-- /header -->
 
 		<div data-role="content">	
-			<ul data-role="listview" class="wordlist" data-filter="true">
+			<ul data-role="listview" class="wordlist" data-filter="true" data-divider-theme="a" data-theme="c">
 				
 				{foreach item=cardset key=sub from=$lesson->words}
 					

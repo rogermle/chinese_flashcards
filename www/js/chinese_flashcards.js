@@ -207,7 +207,10 @@ $(document).on("pagebeforeshow", "div.card_page", function(e){
 			});
 		});
 	});
-	
+	/*
+	 * Navigation controls
+	 * Swipe Listeners
+	 * */
 	$(document).on("swipeleft","div.card_page", function(e){
 		next_page();
 	});
@@ -215,7 +218,9 @@ $(document).on("pagebeforeshow", "div.card_page", function(e){
 	$(document).on("swiperight","div.card_page", function(e){
 		previous_page();
 	});
-	
+	/*
+	 * Keyboard Listeners
+	 */
 	$(document).on("keyup","div.card_page", function(e){
 		if(e.keyCode == 37)
 		{
@@ -308,17 +313,40 @@ $(document).on("pagebeforeshow", "div.card_page", function(e){
 	});
 	
 	$(document).on('change', 'fieldset.play_buttons input[type="radio"]', function(){
-		var prefix = "#jquery_jplayer_";
-		var target_player = prefix + this.id;
-		
-		$( target_player ).jPlayer("pauseOthers");
-		$( target_player ).jPlayer("play");
-		
-		//Set the Button back to normal
+		/*
+		 * Using Modernizr 2.5.3 to detect prescence of compatability with HTML5 Audio component
+		 * Uses JPlayer as a fallback which has Flash as JPlayer's Fallback
+		 */
+	    var audioElement = document.createElement('audio');
+	    if( Modernizr.audio.mp3 != "")
+	    {
+	    		audioElement.src = this.value;
+	    		audioElement.play();
+	    }
+	    else if(Modernizr.audio.ogg)
+	    {
+	    	var prefix = "#oga_";
+	    	var target = prefix + this.id;
+	    	audioElement.src = $(target).attr('value');
+	    	audioElement.play();
+	    }
+	    else
+	    {
+	    	var prefix = "#jquery_jplayer_";
+			var target_player = prefix + this.id;
+			
+			$( target_player ).jPlayer("pauseOthers");
+			$( target_player ).jPlayer("play");
+			
+	    }
+	    //Set the Button(s) back to normal
 		$(this).prop('checked', false);
 		$(this).checkboxradio('refresh');
 	});
-	
+	/*
+	 * Populate the dialog box using Javascript
+	 * This clones the data on the page and puts it in the dialog box. All styling will match the current CSS
+	 */
 	$(document).on('change', 'fieldset.word_toggle input[type="checkbox"].show_all', function(){
 		//Programatically open Dialog box
 		var pinyin = $.mobile.activePage.find('div.card_content span.pinyin').html();

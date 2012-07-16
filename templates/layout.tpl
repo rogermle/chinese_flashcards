@@ -4,6 +4,10 @@
 	<base href="{$app_root}">
 	<title>{block name="title"}{$main_title}{/block}</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="translucent" />
+	<link rel="apple-touch-startup-image" href="../../www/images/test_logo.png" media="screen and (max-device-width: 320px)" />
+    <link rel="apple-touch-icon" href="../../www/images/app_icon.png" />
 	{block name="meta"}
 	{/block}
 	<!--<meta name="google" content="notranslate" />-->
@@ -20,11 +24,13 @@
 	<script src="{$app_root}www/js/jquery.jplayer.min.js"></script>
 	<script src="{$app_root}www/js/chinese_flashcards.js"></script>
 	<script src="{$app_root}www/js/jquery.cookie.js"></script>
+	<script src="{$app_root}www/js/modernizr-2.5.3.js"></script>
+	
 	
 	{block name="script"}
 	{/block}
 </head> 
-<body class="ui-mobile-viewport ui-overlay-c"> 
+<body class="ui-mobile-viewport ui-overlay-a"> 
 {block name="page"}{/block}
 </body>
 

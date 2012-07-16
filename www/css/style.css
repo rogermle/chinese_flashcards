@@ -279,28 +279,46 @@ html, body
 			height: 100%;
 		}
 		
-		div.books_page li
+		div.books_page ul
 		{
 			list-style-type: none;
-			display: inline;
 		}
 		
 		div#logo
 		{
 			display:block;
-			height: 576px;
-			background:  url('../images/logo.png') top center no-repeat;
+			margin-top: -5em;
+			height: 22.8em;
+			background:  url('../images/logo-small.png') top center no-repeat;
 			text-indent:-1000em;
 			margin-left: auto;
 			margin-right: auto;
 		}
 		
-		div#theBooks ul
+		div#theBooks ul, div#theLinks ul
+		{
+			text-align: center;
+			list-style: none;
+			
+		}
+		
+		div#theBooks ul li, div#theLinks ul li
+		{
+			color: #FFFFFF;
+			display: inline;
+		}
+		
+		div#theBooks ul li a.ui-link, div#theLinks ul li a.ui-link
+		{
+			color: #FFFFFF;
+		}
+		
+		h1#title, div#theInstructions
 		{
 			text-align: center;
 		}
 		
-		div#theBooks ul li
+		.ui-icon-round-speaker
 		{
-			color: #FFFFFF;
+			background-image: url('../images/sound_speaker_round.png');
 		}
