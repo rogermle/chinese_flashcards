@@ -12,9 +12,10 @@
 			</ul>
 		</div><!-- #theBooks -->
 		<div id="logo">
+			<a href="instructions"></a>
 		</div>
 		<div id="theInstructions">
-			<p>Instructions</p>
+			<a href="instructions">Instructions</a>
 		</div>
 		<div id="theLinks">
 			<ul>
