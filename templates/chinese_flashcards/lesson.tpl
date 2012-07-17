@@ -108,14 +108,17 @@
                 	<fieldset data-role="controlgroup" class="play_buttons" data-type="horizontal">
 						{if $card->audio_file_a and $card->audio_file_b}
 					    <input type="radio" id="audio_a_{$card->id}" name="audio_choice" value="{$card->audio_file_a}" class="audio_a" />
-					    <label for="audio_a_{$card->id}">A</label>
+					    <!--<label for="audio_a_{$card->id}">A</label>-->
+					    <a href="#" data-id="audio_a_{$card->id}" data-role="button" data-icon="round-speaker">A</a>
 					    <input type="radio" id="audio_b_{$card->id}" name="audio_choice" value="{$card->audio_file_b}" class="audio_b" />
-					    <label for="audio_b_{$card->id}">B</label>
+					    <!--<label for="audio_b_{$card->id}">B</label>-->
+					    <a href="#" data-id="audio_b_{$card->id}" data-role="button" data-icon="round-speaker">B</a>
 					    <input type="hidden" id="oga_audio_a_{$card->id}" name="audio_source" value="{$card->oga_audio_file_a}" class ="audio_source_a" />
 					    <input type="hidden" id="oga_audio_b_{$card->id}" name="audio_source" value="{$card->oga_audio_file_b}" class ="audio_source_b" />
 					    {elseif $card->audio_file_a}
 					    <input type="radio" id="audio_a_{$card->id}" name="audio_choice" value="{$card->audio_file_a}" class="audio_a" />
-					    <label for="audio_a_{$card->id}">A</label>
+					    <!--<label for="audio_a_{$card->id}">A</label>-->
+					    <a href="#" data-id="audio_a_{$card->id}" data-role="button" data-icon="round-speaker">A</a>
 					    <input type="hidden" id="oga_audio_a_{$card->id}" name="audio_source" value="{$card->oga_audio_file_a}" class="audio_source_a" />
 					    {else}
 					    <input type="radio" id="no_audio_{$card->id}" name="audio_choice" value="no_audio" class="no_audio" disabled="disabled"/>

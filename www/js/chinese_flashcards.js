@@ -312,21 +312,27 @@ $(document).on("pagebeforeshow", "div.card_page", function(e){
 		$.cookie('user_pref', char_toggle_array, {expires: 14, path: '/'});
 	});
 	
-	$(document).on('change', 'fieldset.play_buttons input[type="radio"]', function(){
+	$(document).on('click', 'fieldset.play_buttons a', function(e){
 		/*
 		 * Using Modernizr 2.5.3 to detect prescence of compatability with HTML5 Audio component
 		 * Uses JPlayer as a fallback which has Flash as JPlayer's Fallback
+		 * Modified buttons to be a buttons for playback since icons were needed
+		 * Changed from input buttons
+		 * TODO: Setup Elements for playback when page is loaded instead of on the fly as done currently
 		 */
+		e.preventDefault();
 	    var audioElement = document.createElement('audio');
+	    var audio_id = $(this).attr('data-id');
+
 	    if( Modernizr.audio.mp3 != "")
 	    {
-	    		audioElement.src = this.value;
+	    		audioElement.src = $("#" + audio_id).val();
 	    		audioElement.play();
 	    }
 	    else if(Modernizr.audio.ogg)
 	    {
 	    	var prefix = "#oga_";
-	    	var target = prefix + this.id;
+	    	var target = prefix + $("#" + audio_id).attr('id');
 	    	audioElement.src = $(target).attr('value');
 	    	audioElement.play();
 	    }
@@ -339,9 +345,6 @@ $(document).on("pagebeforeshow", "div.card_page", function(e){
 			$( target_player ).jPlayer("play");
 			
 	    }
-	    //Set the Button(s) back to normal
-		$(this).prop('checked', false);
-		$(this).checkboxradio('refresh');
 	});
 	/*
 	 * Populate the dialog box using Javascript

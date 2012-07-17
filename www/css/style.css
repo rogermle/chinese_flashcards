@@ -318,7 +318,7 @@ html, body
 			text-align: center;
 		}
 		
-		.ui-icon-round-speaker
+		span.ui-icon-round-speaker
 		{
-			background-image: url('../images/sound_speaker_round.png');
+			background-image: url('../images/speaker_symbol.png');
 		}
