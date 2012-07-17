@@ -3,7 +3,7 @@
 {block name="page"}
 	<div id="word_list" data-role="page" data-fullscreen="true" data-add-back-btn="true" data-back-btn-text="Previous">
 			<div class="ui-bar ui-bar-a ui-header">
-				<a rel='external' href="{$app_root}books" data-role="button" data-icon="home" data-inline="true" data-iconpos="notext">Home</a>
+				<a href="{$app_root}books" data-role="button" data-icon="home" data-inline="true" data-iconpos="notext">Home</a>
 				<h1 class="ui-title">
 					<a id="book" href="{$app_root}book/{$lesson->book->short_name}">{$lesson->book->short_name|capitalize}</a> : Lesson {$lesson->name}
 				</h1>

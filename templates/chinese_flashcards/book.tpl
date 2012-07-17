@@ -4,7 +4,7 @@
 <div data-role="page" class="lessonlist_page">
 
 	<div data-role="header" class="ui-bar">
-		<a rel='external' href="{$app_root}books" data-role="button" data-icon="home" data-inline="true" data-iconpos="notext">Home</a>
+		<a href="{$app_root}books" data-role="button" data-icon="home" data-inline="true" data-iconpos="notext">Home</a>
 		<h1><a href="{$app_root}books">Books</a> :: {$book->short_name|capitalize}</h1>
 	</div><!-- /header -->
 

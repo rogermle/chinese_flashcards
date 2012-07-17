@@ -362,6 +362,15 @@ $(document).on("pagebeforeshow", "div.card_page", function(e){
 		
 		$.mobile.changePage("#dialog", {role: 'dialog', transition: 'pop'});
 	});
+	
+	//Event Listeners to goto Instructions Page
+	$(document).on('click', 'div.books_page div#logo', function(){
+		$.mobile.changePage("instructions");
+	});
+	
+	$(document).on('click', 'div.books_page div#theInstructions', function(){
+		$.mobile.changePage("instructions");
+	});
 
 $(document).bind("mobileinit", function(){
 	$.mobile.loadingMessage = 'Initializing';
